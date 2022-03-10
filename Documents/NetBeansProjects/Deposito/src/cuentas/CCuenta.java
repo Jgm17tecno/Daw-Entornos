@@ -9,8 +9,8 @@ package cuentas;
 public class CCuenta {
 
     /**
-     * @Author jesus gonzalez
-     * @Version primera versión
+     * @author jesus gonzalez
+     * @version primera versión
      * @return the cuenta
      */
     public String getCuenta() {
@@ -18,8 +18,8 @@ public class CCuenta {
     }
 
     /**
-     * @Author jesus gonzalez
-     * @Version primera versión
+     * @author jesus gonzalez
+     * @version primera versión
      * @param cuenta the cuenta to set
      */
     public void setCuenta(String cuenta) {
@@ -27,8 +27,8 @@ public class CCuenta {
     }
 
     /**
-     * @Author jesus gonzalez
-     * @Version primera versión
+     * @author jesus gonzalez
+     * @version primera versión
      * @return the saldo
      */
     public double getSaldo() {
@@ -36,8 +36,8 @@ public class CCuenta {
     }
 
     /**
-     * @Author jesus gonzalez
-     * @Version primera versión
+     * @author jesus gonzalez
+     * @version primera versión
      * @param saldo the saldo to set
      */
     public void setSaldo(double saldo) {
@@ -54,20 +54,20 @@ public class CCuenta {
     public CCuenta()
     {
      /**
-     * @Author jesus gonzalez
-     * @Version primera versión
+     * @author jesus gonzalez
+     * @version primera versión
      */ 
     }
 
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Param nombre del usuario
-     * @Param cuenta del usuario
-     * @Param saldo de la cuenta
-     * @Param tipo de cuenta
+     * @author jesus gonzalez
+     * @version primera versión
+     * @param nombre del usuario
+     * @param cuenta del usuario
+     * @param saldo de la cuenta
+     * @param tipo de cuenta
      */ 
         nombre =nom;
         cuenta=cue;
@@ -77,9 +77,9 @@ public class CCuenta {
     public void asignarNombre(String nom)
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Param nombre del usuario
+     * @author jesus gonzalez
+     * @version primera versión
+     * @param nombre del usuario
      */ 
         setNombre(nom);
     }
@@ -87,9 +87,9 @@ public class CCuenta {
     public String obtenerNombre()
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Return el nombre
+     * @author jesus gonzalez
+     * @version primera versión
+     * @return el nombre
      */ 
         return getNombre();
     }
@@ -98,9 +98,9 @@ public class CCuenta {
     public double estado()
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Return el saldo
+     * @author jesus gonzalez
+     * @version primera versión
+     * @return el saldo
      */ 
         return getSaldo();
     }
@@ -109,10 +109,10 @@ public class CCuenta {
     public void ingresar(double cantidad) throws Exception
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Param cantidad de dinero a ingresar
-     * @Throw excepción si hay cantidad negativa
+     * @author jesus gonzalez
+     * @version primera versión
+     * @param cantidad de dinero a ingresar
+     * @throw excepción si hay cantidad negativa
      */ 
         if (cantidad<0)
             throw new Exception("No se puede ingresar una cantidad negativa");
@@ -122,10 +122,10 @@ public class CCuenta {
     public void retirar(double cantidad) throws Exception
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Param cantidad a retirar
-     * @Trows excepción por cantidad negativa
+     * @author jesus gonzalez
+     * @version primera versión
+     * @param cantidad a retirar
+     * @trows excepción por cantidad negativa
      */ 
         if (cantidad <= 0)
             throw new Exception ("No se puede retirar una cantidad negativa");
@@ -138,9 +138,9 @@ public class CCuenta {
     public String obtenerCuenta()
     {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Return cuenta
+     * @author jesus gonzalez
+     * @version primera versión
+     * @return cuenta
      */ 
         return getCuenta();
     }
@@ -148,9 +148,9 @@ public class CCuenta {
 
     public String getNombre() {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Return nombre usuario
+     * @author jesus gonzalez
+     * @version primera versión
+     * @return nombre usuario
      */ 
         return nombre;
     }
@@ -158,9 +158,9 @@ public class CCuenta {
 
     public void setNombre(String nombre) {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Param nombre del susuario
+     * @author jesus gonzalez
+     * @version primera versión
+     * @param nombre del susuario
      */ 
         this.nombre = nombre;
     }
@@ -168,9 +168,9 @@ public class CCuenta {
 
     public double getTipoInterés() {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Return tipo de interes
+     * @author jesus gonzalez
+     * @version primera versión
+     * @return tipo de interes
      */ 
         return tipoInterés;
     }
@@ -178,9 +178,9 @@ public class CCuenta {
 
     public void setTipoInterés(double tipoInterés) {
         /**
-     * @Author jesus gonzalez
-     * @Version primera versión
-     * @Param tipo de interés
+     * @author jesus gonzalez
+     * @version primera versión
+     * @param tipo de interés
      */ 
         this.tipoInterés = tipoInterés;
     }
