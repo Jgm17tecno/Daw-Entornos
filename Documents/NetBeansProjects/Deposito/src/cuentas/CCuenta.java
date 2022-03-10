@@ -181,6 +181,7 @@ public class CCuenta {
      * @author jesus gonzalez
      * @version primera versión
      * @param tipo de interés
+     * 
      */ 
         this.tipoInterés = tipoInterés;
     }
